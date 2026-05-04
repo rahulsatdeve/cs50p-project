@@ -1,47 +1,60 @@
 # cs50p-project
 My final project for the CS50P Python course.
-#filmmaker team selector (Nagpur edition)
-## video url
-# description:
-The filmmaker team selector is a python based application designed to help young filmmakers in Nagpur like me , find a collaborative and qualified team for film projects. 
-The idea behind this came from my interest in filmmaking and the difficulty of finding qualified people in Nagpur.
-This program allows users to enter their data such as their name, city, filmmaking experience, their role in filmmaking and then it filters the candidates based on the predefined eligibility creiteria,then builds a final team of exactly 5 members.
-## features:
-- Accepts user input for name, city, short film experience, and role
-- Validates that the candidate is from Nagpur
-- Ensures the candidate has made at least one short film
-- Restricts roles to a predefined set: actor, director, dop, writer, producer, and music
-- Continuously collects valid candidates until a team of 5 members is formed
-- Displays the final selected team in a structured format
-# project structure:
-The project consists of the following files:
+Filmmaker Team Selector (Nagpur Edition)
+Video URL:
+(Add demo video link here)
 
-- `project.py`: Contains the main program logic, including input handling, validation functions, and team display functionality.
-- `test_project.py`: Contains pytest-based unit tests to verify the correctness of validation functions and member addition logic.
-- `README.md`: Documentation explaining the project, its functionality, and design decisions.
-# design decisions:
-The program uses modfularity to improve readability and maintainability. Instead of conjusting all logic into the main function , separate functions were created for validation and data handling.
-Two key validation functions were implemented:
-- `valid_film_person()` ensures that only candidates from Nagpur with prior short film experience are accepted.
-- `valid_role()` ensures that only predefined filmmaking roles are allowed.	
-This separation of logic makes the program easy to understand , test , and extend in the future.
-A dictionary-based structure was used to store each team member’s details, allowing for better organization of data compared to simple lists.
-### Testing
+Description:
 
-The project includes automated tests written using `pytest`. These tests verify:
-- Correct validation of city and filmmaking experience
-- Proper role validation including case-insensitive inputs
-- Correct addition of members to the team list
+The Filmmaker Team Selector is a Python-based application designed to help young filmmakers in Nagpur find a collaborative and qualified team for film projects.
 
-Tests can be executed using: python -m pytest test_project.py
-### Future Improvements
+The idea behind this project came from my interest in filmmaking and the difficulty of finding skilled collaborators locally.
 
-Possible future enhancements include:
-- Adding file storage to save team data permanently
-- Preventing duplicate roles (e.g., only one director allowed)
-- Adding a graphical interface for easier interaction
-- Expanding eligibility criteria for more complex selection logic
+This program allows users to enter details such as name, city, filmmaking experience, and role. It then filters candidates based on predefined eligibility criteria and builds a final team of exactly 5 members.
 
-### Conclusion
+Features:
+Accepts user input for name, city, filmmaking experience, and role
+Validates that the candidate is from Nagpur
+Ensures the candidate has made at least one short film
+Restricts roles to a predefined set: actor, director, DOP, writer, producer, and music
+Continuously collects valid candidates until a team of 5 members is formed
+Displays the final selected team in a structured format
 
-This project demonstrates the use of Python fundamentals such as functions, loops, conditionals, lists, and dictionaries. It also applies basic software engineering principles such as modular design and testing. Overall, it simulates a real-world problem in the filmmaking domain and provides a structured solution for team selection.
+Project Structure:
+project.py → Main program logic including input handling, validation functions, and team display
+test_project.py → Pytest-based unit tests for validation and member addition logic
+README.md → Project documentation
+
+Design Decisions:
+
+The program uses modularity to improve readability and maintainability. Instead of placing all logic in a single function, separate functions handle validation and data processing.
+
+Two key validation functions are implemented:
+
+valid_film_person() → Ensures candidates are from Nagpur and have at least one short film experience
+valid_role() → Ensures only predefined filmmaking roles are accepted
+
+A dictionary-based structure is used to store each team member’s details, improving data organization compared to simple lists.
+
+Testing:
+
+The project uses pytest for automated testing. Tests verify:
+
+City and filmmaking experience validation
+Role validation (including case-insensitive inputs)
+Correct addition of members to the team list
+
+Run tests using:
+
+python -m pytest test_project.py
+Future Improvements
+Add file storage to save team data permanently
+Prevent duplicate roles (e.g., only one director allowed)
+Add a graphical user interface (GUI)
+Expand eligibility rules for advanced selection logic
+
+Conclusion:
+
+This project demonstrates Python fundamentals such as functions, loops, conditionals, lists, and dictionaries. It also applies modular design and testing principles.
+
+It simulates a real-world filmmaking scenario by helping build structured and qualified teams for creative projects.
