@@ -1,8 +1,8 @@
 # cs50p-project
 My final project for the CS50P Python course.
 Filmmaker Team Selector (Nagpur Edition)
-Video URL:
-(Add demo video link here)
+Video URL: https://youtu.be/mpWv8F1DRpY
+
 
 Description:
 
